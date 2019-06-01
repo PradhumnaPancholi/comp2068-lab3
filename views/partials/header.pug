@@ -1,0 +1,12 @@
+mixin NavItem(link, text)
+  li.nav-item.active
+    a.nav-link(href=link)= text
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      +NavItem('/pradhumna', 'Pradhumna')
+      +NavItem('/nitendra', 'Nitendradatta')
+      +NavItem('/yogini', 'Yogini')
